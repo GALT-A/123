@@ -1,0 +1,64 @@
+<! DOCTYPE html> 
+< html >
+
+< body  style = " text-align : center ; " >
+	< h1  style = " color : green ; " >
+			ЛЮБИМЫЙ ЛЮБИМЧИК
+		</ h1 >
+
+	< h2 >
+	Я думаю, что это не так	 
+</ h2 >
+
+
+
+	Òåêñò: 
+	< input  type = " text "
+		id = " myText "
+		value = " GCTA " >
+
+	< button  type = " button "
+			onclick = " myFunction () " >
+	Îëó ÷ èòü ÐÍÊ 
+</ button >
+	< h2 >
+	Âàøà ÐÍÊ	 
+</ h2 >
+
+	< p  id = " rnk " > </ p >
+
+	< скрипт > 
+		// Здесь значение сохраняется в новой переменной x
+		function  myFunction () {
+			var str = 
+				документ . getElementById ( " myText " ). стоимость ;
+			  let result =  ' ' ;
+  for ( пусть i =  0 ; i <  str . length ; i ++ ) {
+    if (str [i]. toUpperCase () ===  ' G ' ) {
+      результат + =  ' C ' ;
+    }
+    иначе  если (str [i]. toUpperCase () ===  ' C ' ) {
+      результат + =  ' G ' ;
+    }
+    иначе  если (str [i]. toUpperCase () ===  ' T ' ) {
+      результат + =  ' A ' ;
+    }
+    иначе  если (str [i]. toUpperCase () ===  ' A ' ) {
+      результат + =  ' U ' ;
+    }
+	еще {
+      результат + =  ' _ ' ;
+    }
+  }
+ 
+			
+			документ . getElementById (
+			" рнк " ). innerHTML  = результат;
+		} 
+	</ script >
+< h2 >
+Автор Саргсян Дядя Григорьевич	 
+</ h2 >
+</ body >
+
+</ html >
